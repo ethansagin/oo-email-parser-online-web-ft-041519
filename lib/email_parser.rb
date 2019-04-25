@@ -17,4 +17,5 @@ class EmailParser
   def self.parse(email_string)
     e_arr = email_string.split(", ") || email_string.split(" ")
   binding.pry
+  end
 end
