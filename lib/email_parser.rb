@@ -13,7 +13,6 @@ class EmailParser
   end
   
   def parse
-    e_arr = email_string.split(/,\s|\s/)
-    e_arr.collect
+    e_arr = email_string.split(/,\s|\s/).uniq
   end
 end
