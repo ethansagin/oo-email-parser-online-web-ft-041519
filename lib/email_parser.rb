@@ -8,13 +8,12 @@ class EmailParser
   attr_accessor :email_string
   attr_reader :parsed_list
 
-  @@parsed_list = []
-  
   def initialize(e_string)
     @email_string = e_string
   end
   
   def parse
     e_arr = email_string.split(/,\s|\s/)
+    e_arr.collect
   end
 end
